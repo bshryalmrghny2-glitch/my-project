@@ -17,7 +17,6 @@
     </style>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm mb-4">
     <div class="container">
         <a class="navbar-brand fw-bold fs-5" href="/booking">🧪 نظام إدارة المعامل والمعدات</a>
@@ -36,7 +35,7 @@
 </nav>
 
 <div class="container mb-5">
-    
+
     @if(session('success'))
         <div class="alert alert-success fw-bold shadow-sm mb-4">
             ✨ {{ session('success') }}
@@ -44,15 +43,15 @@
     @endif
 
     <div class="row g-4">
-        
+
         <div class="col-lg-4">
             <div class="card rounded-3 shadow-sm">
                 <div class="card-body p-4">
                     <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">تسجيل جهاز جديد</h5>
-                    
+
                     <form action="/equipment/store" method="POST">
-                        @csrf 
-                        
+                        @csrf
+
                         <div class="mb-3">
                             <label class="form-label small fw-bold text-secondary">كود الجهاز (Unique Code):</label>
                             <input type="text" name="equipment_code" class="form-control" placeholder="مثال: EQ-101" required>

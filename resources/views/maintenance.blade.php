@@ -13,7 +13,6 @@
     </style>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm mb-4">
     <div class="container">
         <a class="navbar-brand fw-bold fs-5" href="/booking">🧪 نظام إدارة المعامل والمعدات</a>
@@ -29,7 +28,7 @@
 </nav>
 
 <div class="container mb-5">
-    
+
     @if(session('success'))
         <div class="alert alert-success fw-bold shadow-sm mb-4">
             ✨ {{ session('success') }}
@@ -37,15 +36,15 @@
     @endif
 
     <div class="row g-4">
-        
+
         <div class="col-lg-4">
             <div class="card rounded-3 shadow-sm">
                 <div class="card-body p-4">
                     <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">إرسال بلاغ عطل فني</h5>
-                    
+
                     <form action="/maintenance/store" method="POST">
-                        @csrf 
-                        
+                        @csrf
+
                         <div class="mb-3">
                             <label class="form-label small fw-bold text-secondary">كود الجهاز المعطل:</label>
                             <input type="text" name="equipment_code" class="form-control" placeholder="مثال: EQ-101" required>
@@ -105,7 +104,7 @@
                                             @if($report->status == 'قيد الانتظار')
                                                 <a href="/maintenance/status/{{ $report->id }}/جاري الإصلاح" class="btn btn-warning text-dark fw-bold">بدء الإصلاح</a>
                                             @endif
-                                            
+
                                             @if($report->status != 'تم الإصلاح')
                                                 <a href="/maintenance/status/{{ $report->id }}/تم الإصلاح" class="btn btn-success fw-bold">تم الإصلاح ✓</a>
                                             @else
@@ -131,4 +130,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>   
+</html>

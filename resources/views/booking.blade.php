@@ -13,7 +13,14 @@
     </style>
 </head>
 <body>
-
+<nav style="background: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
+    <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+        <li><a href="/booking" style="text-decoration: none; color: #333; font-weight: bold;">لوحة الحجوزات</a></li>
+        <li><a href="/equipment" style="text-decoration: none; color: #333; font-weight: bold;">إدارة الأجهزة</a></li>
+        <li><a href="/maintenance" style="text-decoration: none; color: #333; font-weight: bold;">طلبات الصيانة</a></li>
+        <li><a href="/reports" style="text-decoration: none; color: #333; font-weight: bold;">التقارير الشاملة</a></li>
+    </ul>
+</nav>
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm mb-4">
     <div class="container">
         <a class="navbar-brand fw-bold fs-5" href="/booking">🧪 نظام إدارة المعامل والمعدات</a>

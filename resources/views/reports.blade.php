@@ -17,7 +17,6 @@
     </style>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm mb-4">
     <div class="container">
         <a class="navbar-brand fw-bold fs-5" href="/booking">🧪 نظام إدارة المعامل والمعدات</a>
@@ -33,7 +32,7 @@
 </nav>
 
 <div class="container mb-5">
-    
+
     <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
         <h4 class="fw-bold text-dark">📊 مؤشرات الأداء والتقارير الحية للكلية</h4>
         <span class="badge bg-dark px-3 py-2 fw-semibold">تحديث فوري تلقائي</span>
@@ -77,9 +76,9 @@
                 </div>
 
                 <div class="progress" style="height: 20px;">
-                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
-                         role="progressbar" 
-                         style="width: {{ $efficiency_rate }}%;" 
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                         role="progressbar"
+                         style="width: {{ $efficiency_rate }}%;"
                          aria-valuenow="{{ $efficiency_rate }}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
@@ -98,7 +97,7 @@
         <div class="col-lg-7">
             <div class="card rounded-3 shadow-sm bg-white p-4 h-100">
                 <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">🏢 كشف جرد الأجهزة الموزعة حسب المختبرات</h5>
-                
+
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover text-center align-middle mb-0">
                         <thead class="table-light text-secondary small">

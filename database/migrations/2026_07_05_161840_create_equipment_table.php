@@ -15,8 +15,8 @@ class CreateEquipmentTable extends Migration
             $table->string('model')->nullable(); // موديل الجهاز
             $table->string('category')->nullable(); // الفئة
             $table->string('lab_name'); // اسم المعمل أو مكانه
-            $table->enum('status', ['Available', 'Booked', 'Maintenance'])->default('Available'); // حالة الجهاز
-            $table->text('notes')->nullable(); // ملاحظات
+            $table->enum('status', ['نشط', 'تحت الصيانة', 'خارج الخدمة'])->default('نشط');
+             $table->text('notes')->nullable(); // ملاحظات
             $table->timestamps();
         });
     }
