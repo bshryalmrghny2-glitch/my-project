@@ -29,7 +29,6 @@
 </nav>
 
 <div class="container mb-5">
-
     @if(session('success'))
         <div class="alert alert-success fw-bold shadow-sm mb-4">
             ✨ {{ session('success') }}
@@ -37,7 +36,11 @@
     @endif
 
     <div class="row g-4">
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 8649acdb3d6bfe1800e414f64a2aeba17f373075
         <div class="col-lg-4">
             <div class="card rounded-3 shadow-sm">
                 <div class="card-body p-4">
