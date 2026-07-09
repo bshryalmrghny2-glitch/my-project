@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class LabSystemController extends Controller
 {
-    // ==========================================
+    
     // 1. لوحة التحكم وحجوزات المعامل والمعدات (تاريخ ووقت معاً)
     // ==========================================
     public function showBooking()

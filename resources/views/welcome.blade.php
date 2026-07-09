@@ -215,6 +215,9 @@
                 </div>
             </main>
         </div>
+        ### Project Developed by:
+- Heba Jwan
+
 
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>

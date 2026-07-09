@@ -8,7 +8,7 @@ Route::get('/', function () {
     return redirect('/booking'); 
 });
 
-// ==========================================
+
 // 1. مسارات لوحة التحكم وحجوزات المعامل
 // ==========================================
 Route::get('/booking', [LabSystemController::class, 'showBooking']);

@@ -23,8 +23,8 @@ class BookingController extends Controller
         try {
             // إرسال طلب خفي للمنظومة الرئيسية للتحقق من قيد الطالب
             $response = Http::get($mainSystemUrl);
-
-            // 3. التحقق من رد نظام الجامعة الرئيسي
+            
+            
             if ($response->successful()) {
                 // إذا كان الطالب مسجل وصحيح، نظامك يوافق على معالجة الطلب
                 return response()->json([
